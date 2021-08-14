@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body background="bg.jpg">
+    <div id="container">
+        <!--    Start Section     -->
+        <div id="startSection">
+            <h2>Are you ready to test your knowledge of Prime Numbers?</h2>
+            <div id="start">Start Quiz</div>
+        </div>
+        <!--    Guide Section    -->
+        <div id="guide">
+            <h2>Quiz Guide</h2>
+            <h4>1.You get 20 Seconds to answer each question.</h4>
+            <h4>2.Once you click and select an answer it is final and cannot be changed.</h4>
+            <h4>3.For each correct answer you will get 1 point.</h4>
+            <h4>4.You can view the correct answers at the end of the quiz.</h4>
+            <h4>Happy quizzing!</h4>          
+            <div id="button">
+             <button id="exit">Exit</button>
+             <button id="continue">Continue</button>
+            </div>
+        </div>
+
+        <!--    Quiz Section    -->
+        <div id="quiz">
+            <div id="quiz_header">
+                <h5>Prime Number Quiz</h5>
+                <div id="timer">
+                    <h6>Time Left</h6>
+                    <h6 id="time">00</h6>
+                </div>
+            </div>
+
+            <!--     Quiz Questions  -->
+
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+
+            <!--       Quiz Choices   -->
+
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+            <!--  Answers Section-->
+
+            <div id="answersSection">
+                <h3 id="total_correct">3 Of 10 Questions</h3>
+                <h3 id="next_question">Next</h3>
+            </div>
+        </div>
+        <!--   Result Section  -->
+        <div id="result">
+            <i class="fas fa-trophy"></i>
+            <h6>Quiz Completed</h6>
+            <h6 id="points">You Got 4 Out Of 10</h6>
+            <button id="quit">Quit Quiz</button>
+            <button id="show_answers">Show Answers</button>
+        </div>
+
+        <div id="quiz_ans">
+            <div id="quiz_header_ans">
+                <h5>Prime Number Quiz</h5>
+            </div>
+
+
+            <div id="question_ans">
+                <h2 id="questionText_ans"></h2>
+            </div>
+
+
+            <div id="optionList_ans">
+                <div id=option1_ans_main>
+                <h4  id="option1_ans"></h4>
+                <h3 class="ans_que" id="option1_ans_icon"></h3>
+                </div>
+                <div id=option2_ans_main>
+                    <h4  id="option2_ans"></h4>
+                    <h3 class="ans_que" id="option2_ans_icon"></h3>
+                </div>
+                <div id=option3_ans_main>
+                    <h4  id="option3_ans"></h4>
+                    <h3 class="ans_que" id="option3_ans_icon"></h3>
+                </div>
+                <div id=option4_ans_main>
+                    <h4 id="option4_ans"></h4>
+                    <h3 class="ans_que" id="option4_ans_icon"></h3>
+                </div>
+               
+            </div>
+
+            <div id="answersSection_ans">
+                <h3 id="next_question_ans">Next</h3>
+            </div>
+        </div>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
